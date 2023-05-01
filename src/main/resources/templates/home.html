@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}">
+</head>
+<body>
+<div th:replace="~{fragments :: header}"></div>
+<div class="content">
+    <h1 style="text-align: center" class="mt-4">NAJLEPSZE OFERTY</h1>
+
+    <div th:each="car: ${cars}">
+        <h2 th:text="|${car.carMaker} ${car.carModel}|"></h2>
+        <p th:text="|Cena: ${car.price} zł|"></p>
+    </div>
+
+    <a href="/auctions">
+        <button class="btn btn-dark">Zobacz wszystkie dostępne samochody</button>
+    </a>
+
+</div>
+
+<footer th:replace="~{fragments :: footer}"></footer>
+
+</body>
+</html>

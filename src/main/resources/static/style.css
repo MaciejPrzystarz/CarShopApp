@@ -1,0 +1,25 @@
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    background-image: url('/cars.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 100px;
+}
+
+.header-text {
+    background: rgba(20, 24, 35, 0.68);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: rgba(100, 111, 132, 0.35);
+}
